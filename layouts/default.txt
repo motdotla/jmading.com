@@ -15,21 +15,14 @@ filter:    erb
 	<link rel="stylesheet" href="/css/base.css" type="text/css" media="all" />
 </head>
 <body>
-	<div id="page" class="container_16">
-	
-		<%#= render :partial => "header" %>
-	
-		<%#= render :partial => "main-nav" %>
-	
-		<div class="grid_2">&nbsp;</div>
-	  <div id="content" class="grid_12">
-	     <%= @content %>
-	  </div>
-		<div class="grid_2">&nbsp;</div>
-		<div class="clear"></div>
-	
-		<%#= render :partial => "footer" %>
-	
+	<div id="page" class="container_12">
+		
+		<div class="grid_1">&nbsp;</div>
+		<div id="content" class="grid_10">
+			<%= @content %>
+		</div>
+		<div class="grid_1">&nbsp;</div>
+		
 	</div><!-- /page -->
 </body>
 </html>

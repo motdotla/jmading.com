@@ -1,85 +1,121 @@
 body {
-	font: normal normal normal 13px/1.5 "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
-	background: #d4e9ec;
-	background: #d5e9ed;
-	background: #ccc;
-	background: #fcfcfc;
-	padding-bottom: 10px;
+	background:url(/images/body_bg.gif) repeat;
+	padding:0;
+	margin:0;
+	border:0;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fcfcfc;
 }
-.hidden { display: none; }
-
-
-
-/* Text
----------------------------------------------- */
-h1, h2, h3 { }
-h1 { font-size: 22px; font-weight: normal; }
-h2 { font-size: 16px; font-weight: bold; margin-bottom: 10px; }
-h3 { font-size: 14px; font-weight: bold; margin-bottom: 10px;}
-a { color: #501924; text-decoration: underline;}
 
 /* Structure
----------------------------------------------- */
-#page { }
-#header_home { margin-top: 10px; height: 400px; }
-#cycle_images { overflow: hidden; }
-#cycle_images img { width: 700px; height: 400px; }
-#logo_home { position: relative;	left: 0; top: -74px; z-index: 100;}
-#header { margin-top: 10px; height: 200px; }
-#logo { position: relative;	left: 0; top: -79px; z-index: 100; }
-#main-nav {	
-	border-top: 1px solid #fff; 
-	background: #501924;
-	margin-bottom: 30px;
-	}
-#footer { font-size: 11px; color: #666; }
+------------------------------------*/
+#page {
+	background:url(/images/wrap_bg.gif) no-repeat top center;
+}
+.section {
+	height: 800px;
+}
+.header {
+	padding-top: 40px;
+}
+.header h1 a {
+	text-decoration: none;
+	margin:0;
+	padding:0;
+	font-size:38px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
 
-/* Nav
----------------------------------------------- */
-#main-nav ul {
-	text-align: left;	float: left; font-size: 11px; letter-spacing: 0.5px;
-	margin: 0;
+/* Logo
+------------------------------------*/
+h1#logo  {
+	margin-left: -2000px;
+	width: 2211px;
 }
-#main-nav ul li {
-	display: inline;
-	list-style: none;
-	background: none;
-	float: left; margin: 0; padding: 0;
-	border-right: 1px solid #fff;
-}
-#main-nav ul li a {
+h1#logo a {
 	display: block;
-	text-decoration: none; color: #fdfdfd;
-	padding: 5px 7px 5px 7px;
+	background: url(/images/logo.png) no-repeat top right;
+	height: 114px;
 }
-#main-nav ul li a:hover {
-	background: #000;
+
+/* Navigation
+------------------------------------*/
+.navigation {
+	text-align: right;
 }
-#disclaimer {
-	text-align: right; text-transform: uppercase; font-size: 11px;
+.navigation ul {
+	text-align: right;
+	float: right;
+	list-style:none;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
+	margin:8px 0 0 0;
+	padding:0;
+	position:relative;
+	z-index:1000;
 }
-#disclaimer a {
-	display: block;
-	text-decoration: none; color: #fff; 
-	padding: 5px 7px 5px 7px;
+.navigation ul li {
+	display:inline;
+	padding:0;
+	margin:0 2px 0 0;
+	float:left;
 }
-#disclaimer a:hover {
-	text-decoration: underline;
+.navigation ul li a {
+	color: #94D1FE;
+	text-decoration:none;
+	font-size:16px;
+	float:left;
+	padding:10px 10px 11px 10px;
+	margin:0;
 }
-#footer-nav ul {
-	text-align: left;	float: left; font-size: 11px; margin: 0;
+.navigation ul li a:hover, .navigation ul li a.current {
+	border-bottom:1px dotted #fff;
+	padding:10px;
+	color:#fff;
 }
-#footer-nav ul li {
-	display: inline;
-	list-style: none;
-	background: none;
-	float: left; margin: 0; padding: 0;
+
+/* Featured
+------------------------------------*/
+#featured {
+	background: url(/images/featured_bg.png) no-repeat;
+	overflow: hidden;
+	margin:0 0 0 -15px;
+	height: 286px; 
+	color: #000;
 }
-#footer-nav ul li a {
-	display: block; 
-	text-decoration: underline; color: #666;
-	padding: 5px 14px 5px 0;
+#featured-content {
+	padding: 20px 30px 20px 30px;
 }
-/* Misc
----------------------------------------------- */
-.clear { clear: both; }
+
+/* Excerpt
+------------------------------------*/
+#excerpt {
+	padding:40px 0 50px 0;
+	margin:0;
+}
+#excerpt .paper-plane {
+	background:url(../images/paperplane.png) no-repeat right;
+	display:block;
+	float:right;
+	width:200px;
+	height:171px;
+	position:relative;
+	margin:-50px -115px 0 0;
+}
+#excerpt h3 {
+	padding:0 0 20px 0;
+	margin:0;
+	font-size:30px;
+	font-weight:normal;
+	color:#fff;
+}
+#excerpt h3 a {
+	color: #94D1FE;
+	text-decoration:none;
+}
+#excerpt h3 a:hover {
+	color:#8f8f8f;
+	border-bottom:1px dotted #898989;
+}
