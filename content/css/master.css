@@ -1,121 +1,202 @@
+/* this is the master css we will use for styling */
+
 body {
-	background:url(/images/body_bg.gif) repeat;
-	padding:0;
-	margin:0;
-	border:0;
-	font-family:Arial, Helvetica, sans-serif;
-	color:#fcfcfc;
+	background:#e6e6f1;
 }
 
-/* Structure
-------------------------------------*/
-#page {
-	background:url(/images/wrap_bg.gif) no-repeat top center;
-}
-.section {
-	height: 800px;
-}
-.header {
-	padding-top: 40px;
-}
-.header h1 a {
-	text-decoration: none;
-	margin:0;
-	padding:0;
-	font-size:38px;
-	color:#fff;
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight:normal;
-}
+hr { color: #EEE; border-color: #EEE; }
 
-/* Logo
-------------------------------------*/
-h1#logo  {
-	margin-left: -2000px;
-	width: 2211px;
-}
-h1#logo a {
-	display: block;
-	background: url(/images/logo.png) no-repeat top right;
-	height: 114px;
-}
-
-/* Navigation
-------------------------------------*/
-.navigation {
-	text-align: right;
-}
-.navigation ul {
-	text-align: right;
-	float: right;
-	list-style:none;
-	font-family:Arial, Helvetica, sans-serif;
-	color:#fff;
-	margin:8px 0 0 0;
-	padding:0;
-	position:relative;
-	z-index:1000;
-}
-.navigation ul li {
-	display:inline;
-	padding:0;
-	margin:0 2px 0 0;
-	float:left;
-}
-.navigation ul li a {
-	color: #94D1FE;
+	
+a{
+	color:#0000ff;
+	text-decoration:underline;
+	background-image:none;
+	}
+	
+a:hover{
 	text-decoration:none;
-	font-size:16px;
-	float:left;
-	padding:10px 10px 11px 10px;
-	margin:0;
-}
-.navigation ul li a:hover, .navigation ul li a.current {
-	border-bottom:1px dotted #fff;
-	padding:10px;
-	color:#fff;
+	background:none;
+	}
+
+h2 {
+	color:#022c56; font-weight:bold; 
+	margin-bottom: 3px;
+	margin-top: 0; padding-top: 20px;
 }
 
-/* Featured
-------------------------------------*/
-#featured {
-	background: url(/images/featured_bg.png) no-repeat;
-	overflow: hidden;
-	margin:0 0 0 -15px;
-	height: 286px; 
-	color: #000;
+.scrollButtons {
+	text-align: right;
+	margin: 0; padding: 0;
+	margin-top: 10px; margin-right: 10px;
 }
-#featured-content {
-	padding: 20px 30px 20px 30px;
+.scrollButtons a {
+	color: #000; text-decoration: none; background: none; padding: 4px 8px 4px 8px;
+}
+.scrollButtons a:hover {
+	color: blue;
 }
 
-/* Excerpt
-------------------------------------*/
-#excerpt {
-	padding:40px 0 50px 0;
-	margin:0;
+img.photo {
+	padding: 12px;
+	background-image: url(/images/photo-bg.png);
+	margin-bottom: 20px;
 }
-#excerpt .paper-plane {
-	background:url(../images/paperplane.png) no-repeat right;
-	display:block;
+
+
+#page{
+	padding:0;
+	background-color:#FFFFFF;
+	}
+	
+#header{
+	height:86px;
+	}
+	
+#header img{
+	margin:13px 0 0 0;
+	}
+	
+
+#navigation{
+	text-align:right;
+	font-size:12px;
+	line-height:15px;
+	padding:37px 0 0 0;
+	}
+	
+#navigation a{
+	margin:0 4px;
+	color:#000000;
+	text-decoration:none;
+	}
+	
+#navigation a:hover{
+	text-decoration:underline;
+	background:none;
+	}
+	
+
+#mainPanel {
+	background-color:#022c56;
+	padding:20px 0 16px;
+	color:#FFFFFF;
+	font-size:20px;
+	line-height:29px;
+	}
+	
+#mainPanel h2{
+	font-size:26px;
+	line-height:27px;
+	margin:0 0 15px 20px;
+	padding:0;
+	color: #FFFFFF;
+	font-weight: normal;
+	}
+	
+#mainPanel p{
+	padding:0 20px;
+	margin:0;
+	}
+	
+#mainPanel p.smallText{
+	text-align:right;
+	font-size:11px;
+	line-height:14px;
+	}
+	
+#mainPanel p.smallText a{
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+	
+#mainPanel p.smallText a:hover{
+	text-decoration:underline;
+	background:none;
+	}
+.imagePanel {
+	background: #AFCCDC;
+}
+.panel {
+	padding:0 0px;
+	margin:10px;
+	}
+.panel h2, .panel p, .panel ul {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+	
+ul.linkList{
+	list-style-type:none;
+	background:#eeeeee;
+	margin:0;
 	float:right;
-	width:200px;
-	height:171px;
-	position:relative;
-	margin:-50px -115px 0 0;
-}
-#excerpt h3 {
-	padding:0 0 20px 0;
+	width:243px;
+	}
+	
+ul.linkList li{
+	height:40px;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	}
+	
+ul.linkList li a{
+	display:block;
+	padding:0 0 0 15px;
+	line-height:40px;
 	margin:0;
-	font-size:30px;
-	font-weight:normal;
-	color:#fff;
-}
-#excerpt h3 a {
-	color: #94D1FE;
+	color:#000000;
 	text-decoration:none;
-}
-#excerpt h3 a:hover {
-	color:#8f8f8f;
-	border-bottom:1px dotted #898989;
-}
+	}
+	
+ul.linkList li a:hover{
+	background-color:#e6e6f1;
+	}
+	
+#contactPanel{
+	background:#afccdc;
+	}
+	
+.map{
+	border:solid 8px #9dbcce;
+	margin:20px 0;
+	}
+	
+#footer{
+	padding:70px 0 10px 0;
+	}
+	
+#footer p{
+	margin:0 0 0 10px;
+	color:#c2c2c2;
+	}
+	
+/*------------------- png solution for ie 6.0 -----------------------*/
+
+/*------ Direct Image ------*/
+	
+* html img,
+
+* html .png{
+
+    position:relative;
+
+    behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+
+        this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+
+        this.src = "images/transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+
+        this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+
+        this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
+
+    );
+
+};
+
+
+-->
+
+
+	
+
