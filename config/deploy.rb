@@ -6,7 +6,7 @@ set :use_sudo, false
 # =============================================================================
 set :user, "scottmotte"
 set :application, "jmading.com"
-set :domain, "jm.scottmotte.com"
+set :domain, "jmading.com"
  
 role :web, domain
 role :app, domain

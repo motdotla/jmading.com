@@ -48,7 +48,7 @@ filter:    erb
 	  
 		<div id="mainPanel" class="grid_10 alpha omega">
 			<h2>Excellence / Knowledge / Experience</h2>
-	    <p>Top Cat! The most effectual Top Cat! Who's intellectual close friends get to call him T.C., providing it's with dignity.</p>
+	    <p>J. Mading is committed to exceeding our clients' expectations. We tackle the hard problems and create solutions.</p>
 	    <p class="smallText">ph.877.210.6160<br />
 	    Fax: 714.210.6199 / e. <a href="mailto:info@jmading.com">info@jmading.com</a></p>
 		</div>
