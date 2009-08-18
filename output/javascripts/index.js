@@ -18,9 +18,9 @@ $(document).ready(function(){
  $('#nav_login').click(function() { 
    login_form.slideToggle(); 
   });
-  // catch submit of login form and send incorrect username/password alert out
-  login_form.submit(function() {
-    alert('Incorrect username and password. Try again.');
+  // catch submit clicked and send incorrect username/password alert out
+  $('#submit_btn').click(function() {
+   alert('Incorrect username and password. Try again.');
   });
   
  
