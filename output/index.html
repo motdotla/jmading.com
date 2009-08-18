@@ -9,27 +9,22 @@
 
 	<!--- CSS Framework --> 
 	<link href="/css/base.css" rel="stylesheet" type="text/css" />
- 
-	<!-- Javascripts --> 
-	<script type="text/javascript" src="javascripts/jquery-1.3.1.min.js"></script>
-	<script type="text/javascript"> 
-		$(document).ready(function(){
-		 $('a').click(function(){
-		  $('html, body').animate({ 
-		                 scrollTop: $($(this).attr("href"))
-		                 .offset().top }, 1000);
-			return false;
-		 });
- 
- 
-		});
-	</script>
 </head>
 <body id="home">
 <div id="main" class="container_12">
+	
 	<!-- page start -->
 	<div class="grid_1">&nbsp;</div>
 	<div id="page" class="grid_10">
+	  <!-- Login form -->
+	  <div class="grid_10 omega">
+    	<form method="GET" action="index.html" id="login_form">
+    	  <input type="text" name="login_field" id="login_field" valu="login"/>
+    	  <input type="password" name="password_field" id="password_field" valu="password"/>
+    	  <input type="submit" value="Login">
+    	</form>
+	  </div>
+  	
 		<!-- header start -->
     <div id="header" class="grid_3 omega">
     	<a href="index.html"><img src="images/logo.jpg" alt="J.MADING" title="J.MADING" /></a>        
@@ -37,11 +32,11 @@
 	  <!-- header end -->
 	  <!-- nav start -->
 	  <div id="navigation" class="grid_7 alpha">
-	  	<a href="#about">About</a> / <a href="#service">Services</a> / <a href="#contact">Contact</a> 
+	  	<a href="#about">About</a> / <a href="#service">Services</a> / <a href="#contact">Contact</a> / <a href="#login" id="nav_login">Login</a> 
 	  </div>
 	  <!-- nav end -->
 	  <div class="clear"></div>
-	  
+    
 		<div id="mainPanel" class="grid_10 alpha omega">
 			<h2>Excellence / Knowledge / Experience</h2>
 	    <p>J. Mading is committed to exceeding our clients' expectations. We tackle the hard problems and create solutions.</p>
@@ -87,11 +82,11 @@
 	</div> 
 	<div class="clear"></div>
 	
-  <div class="grid_6 alpha">
+  <div class="grid_6 alpha omega">
    <p>J. Mading has adopted a practice of expertise which differs from the "one size fits all" approach. Our comprehensive services go above and beyond traditional financial planning, providing high net-worth clients and their businesses with custom tailored solutions. The J. Mading culture and organization encompasses a carefully integrated mix of services, products and advisors previously unavailable in the marketplace.</p>
    <p>Corporations and their ownership face many challenges in today's fast moving environment. J. Mading provides support and expertise that allow executives and their staffs to focus on maximizing profits and managing expenses within their core areas of expertise rather than complying and accommodating regulatory bodies and/or requirements. The American Entrepreneur is the most creative business force on the planet. We facilitate the protection of their successes from litigants, governmental bodies and fierce business conditions.</p>
 	</div>
-	<div class="gri_4 omega">
+	<div class="grid_4 alpha omega">
 	  <img src="images/jmading-logo-large.gif" alt="Logo"  class=""/>
   <!-- <ul class="linkList">
     <li><a href="#">Life Insurance</a></li>
@@ -148,5 +143,10 @@
 	<!-- page End -->
 	<div class="clear"></div>
 </div>
+
+<!-- Javascripts --> 
+<script type="text/javascript" src="javascripts/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.example.js"></script>
+<script type="text/javascript" src="javascripts/index.js"></script>
 </body>
 </html>

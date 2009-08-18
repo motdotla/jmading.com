@@ -169,6 +169,18 @@ ul.linkList li a:hover{
 	margin:0 0 0 10px;
 	color:#c2c2c2;
 	}
+
+#login_form {
+  float: right;
+  background: #AFCCDC;
+  padding: 7px;
+  width: 385px;
+  margin-right: 10px;
+}
+#login_form input[type=text], #login_form input[type=password]  {
+  margin: 4px;
+  width: 150px;
+}
 	
 /*------------------- png solution for ie 6.0 -----------------------*/
 
