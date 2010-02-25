@@ -74,8 +74,8 @@ filter:
 		<div class="grid_6 alpha omega">
 			<p>
 				J.Mading Companies<br />
-				600 Anton Boulevard, Suite 960<br />
-				Costa Mesa, California 92626
+				500 Newport Center Drive, Suite 820<br />
+				Newport Beach, California 92660
 			</p>
 			<p>
 				T. 877.210.6160<br />
